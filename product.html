@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>產品詳細資訊 | SoleStyle 頂級鞋履美學館</title>
+  <meta name="description" content="SoleStyle 熱門產品詳細介紹。高品質面料、舒適與時尚的完美結合，歡迎線上選購。">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="glass-panel">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="SoleStyle Logo" class="logo-img">
+        <div class="logo-text">Sole<span>Style</span></div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html" id="nav-index">首頁</a></li>
+          <li><a href="about.html" id="nav-about">公司簡介</a></li>
+          <li><a href="casual.html" id="nav-casual">休閒服飾</a></li>
+          <li><a href="formal.html" id="nav-formal">正式服飾</a></li>
+          <li><a href="accessories.html" id="nav-accessories">飾品</a></li>
+          <li><a href="gear.html" id="nav-gear">配件</a></li>
+          <li><a href="others.html" id="nav-others">其它類</a></li>
+          <li><a href="contact.html" id="nav-contact">聯絡我們</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="nav-btn" id="search-btn"><i class="fas fa-search"></i></button>
+        <button class="nav-btn" id="theme-toggle"><i class="fas fa-moon"></i></button>
+        <div class="cart-icon-container">
+          <button class="nav-btn" id="cart-btn"><i class="fas fa-shopping-bag"></i></button>
+          <span class="cart-badge" id="cart-badge">0</span>
+        </div>
+        <button class="nav-btn mobile-toggle" id="mobile-toggle"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Product Detail Content -->
+  <main class="container">
+    <div class="detail-grid" id="product-detail-container">
+      <!-- Injected by JavaScript dynamically -->
+    </div>
+  </main>
+
+  <!-- Cart Drawer -->
+  <div class="cart-drawer glass-panel" id="cart-drawer">
+    <div class="cart-header">
+      <h2>購物清單</h2>
+      <button class="close-cart-btn" id="close-cart"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-items-container" id="cart-items">
+      <!-- Items will be injected by main.js -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-subtotal">
+        <span>小計:</span>
+        <span class="cart-subtotal-price" id="cart-subtotal">0</span>
+      </div>
+      <button class="btn btn-primary checkout-btn" id="checkout-btn">立即結帳</button>
+    </div>
+  </div>
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="search-overlay">
+    <button class="search-close" id="search-close"><i class="fas fa-times"></i></button>
+    <div class="search-container">
+      <input type="text" placeholder="搜尋商品名稱或類別..." class="search-input" id="search-input">
+      <p class="search-hint">按 Enter 開始搜尋</p>
+    </div>
+  </div>
+
+  <!-- Success Notification -->
+  <div class="notification success" id="notification">
+    <i class="fas fa-check-circle"></i>
+    <span class="notif-text">成功加入購物車</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="glass-panel">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <h3>Sole<span>Style</span></h3>
+        <p>為您的雙足，尋找最完美的歸宿。精選全球頂級皮革與機能材料，用極致匠心打磨每一款鞋履與配件。</p>
+        <div class="social-links">
+          <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-line"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>產品類別</h4>
+        <ul>
+          <li><a href="casual.html">休閒服飾</a></li>
+          <li><a href="formal.html">正式服飾</a></li>
+          <li><a href="accessories.html">飾品</a></li>
+          <li><a href="gear.html">配件及保養</a></li>
+          <li><a href="others.html">其它周邊</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>關於品牌</h4>
+        <ul>
+          <li><a href="about.html">公司簡介</a></li>
+          <li><a href="about.html#brand-story">品牌故事</a></li>
+          <li><a href="about.html#store-location">直營門市</a></li>
+          <li><a href="contact.html">聯絡我們</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>客戶服務</h4>
+        <ul>
+          <li><a href="#">常見問題 FAQ</a></li>
+          <li><a href="#">退換貨政策</a></li>
+          <li><a href="#">配送服務資訊</a></li>
+          <li><a href="#">隱私權保護條款</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 SoleStyle. All Rights Reserved. Designed by Antigravity.</p>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Get URL parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      const productId = parseInt(urlParams.get('id'));
+
+      const container = document.getElementById('product-detail-container');
+
+      // Find product
+      const product = window.products.find(p => p.id === productId);
+
+      if (!product) {
+        // Show error message if not found
+        if (container) {
+          container.innerHTML = `
+            <div style="grid-column: 1/-1; text-align: center; padding: 100px 20px; color: var(--text-secondary);">
+              <i class="fas fa-exclamation-triangle" style="font-size: 4rem; margin-bottom: 20px; color: var(--color-accent);"></i>
+              <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 10px;">找不到該商品</h2>
+              <p style="margin-bottom: 30px;">很抱歉，您所尋找的商品可能已下架或網址不正確。</p>
+              <a href="index.html" class="btn btn-primary">返回首頁</a>
+            </div>
+          `;
+        }
+        return;
+      }
+
+      // Update Page Title
+      document.title = `${product.name} | SoleStyle 頂級鞋履美學館`;
+
+      // Active state in Nav Menu
+      const navItem = document.getElementById(`nav-${product.category}`);
+      if (navItem) navItem.classList.add('active');
+
+      // Build size options if category is casual or formal (shoes)
+      const isShoes = product.category === 'casual' || product.category === 'formal';
+      let sizeSelectorHTML = '';
+      let selectedSize = null;
+
+      if (isShoes) {
+        selectedSize = "9.5"; // Default selection
+        sizeSelectorHTML = `
+          <div class="option-group">
+            <div class="option-title">選擇尺寸 (US 男碼/女碼)</div>
+            <div class="size-selector">
+              <button class="size-btn" data-size="8">8</button>
+              <button class="size-btn" data-size="8.5">8.5</button>
+              <button class="size-btn" data-size="9">9</button>
+              <button class="size-btn active" data-size="9.5">9.5</button>
+              <button class="size-btn" data-size="10">10</button>
+              <button class="size-btn" data-size="10.5">10.5</button>
+              <button class="size-btn" data-size="11">11</button>
+            </div>
+          </div>
+        `;
+      }
+
+      // Build features list
+      let featuresHTML = '';
+      if (product.features && product.features.length > 0) {
+        featuresHTML = `
+          <div class="detail-features glass-panel">
+            <h3>商品特色</h3>
+            <ul class="features-list">
+              ${product.features.map(f => `<li>${f}</li>`).join('')}
+            </ul>
+          </div>
+        `;
+      }
+
+      // Render Page Content
+      container.innerHTML = `
+        <!-- Left Image Column -->
+        <div class="detail-img-container glass-panel">
+          <img src="${product.image}" alt="${product.name}" class="detail-img">
+        </div>
+        
+        <!-- Right Info Column -->
+        <div class="detail-info">
+          <span class="detail-cat">${product.categoryName}</span>
+          <h1 class="detail-title">${product.name}</h1>
+          
+          <div class="detail-meta">
+            <div class="product-rating" style="margin-bottom: 0;">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <strong style="color: var(--text-primary); margin-left: 5px;">${product.rating}</strong>
+              <span style="margin-left: 5px;">(${product.reviews} 則評價)</span>
+            </div>
+          </div>
+
+          <div class="detail-price" style="margin-bottom: 25px;">${product.price.toLocaleString()}</div>
+          
+          <p class="detail-desc">${product.description}</p>
+          
+          <div class="detail-options">
+            ${sizeSelectorHTML}
+          </div>
+
+          <div class="action-row">
+            <div class="qty-selector">
+              <button class="qty-btn" id="qty-minus">-</button>
+              <input type="text" class="qty-input" id="qty-count" value="1" readonly>
+              <button class="qty-btn" id="qty-plus">+</button>
+            </div>
+            <button class="btn btn-primary" id="add-to-cart-btn" style="flex-grow: 1; border-radius: 25px;">加入購物車</button>
+          </div>
+
+          ${featuresHTML}
+        </div>
+      `;
+
+      // Bind dynamic actions
+      // 1. Quantity button listeners
+      const qtyMinus = document.getElementById('qty-minus');
+      const qtyPlus = document.getElementById('qty-plus');
+      const qtyCount = document.getElementById('qty-count');
+
+      if (qtyMinus && qtyPlus && qtyCount) {
+        qtyMinus.addEventListener('click', () => {
+          let currentVal = parseInt(qtyCount.value);
+          if (currentVal > 1) qtyCount.value = currentVal - 1;
+        });
+
+        qtyPlus.addEventListener('click', () => {
+          let currentVal = parseInt(qtyCount.value);
+          qtyCount.value = currentVal + 1;
+        });
+      }
+
+      // 2. Size buttons listeners
+      if (isShoes) {
+        const sizeButtons = container.querySelectorAll('.size-btn');
+        sizeButtons.forEach(btn => {
+          btn.addEventListener('click', () => {
+            sizeButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            selectedSize = btn.getAttribute('data-size');
+          });
+        });
+      }
+
+      // 3. Add to Cart listener
+      const addToCartBtn = document.getElementById('add-to-cart-btn');
+      if (addToCartBtn) {
+        addToCartBtn.addEventListener('click', () => {
+          const qty = parseInt(qtyCount.value);
+          window.addToCart(product.id, qty, selectedSize);
+        });
+      }
+    });
+  </script>
+</body>
+</html>

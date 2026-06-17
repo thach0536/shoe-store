@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>正式服飾 | SoleStyle 頂級鞋履美學館</title>
+  <meta name="description" content="瀏覽 SoleStyle 頂級皮鞋與高跟鞋系列，包含手工真皮牛津鞋、麂皮德比鞋、職場經典高跟鞋與馬銜扣樂福鞋。">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="glass-panel">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="SoleStyle Logo" class="logo-img">
+        <div class="logo-text">Sole<span>Style</span></div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html" id="nav-index">首頁</a></li>
+          <li><a href="about.html" id="nav-about">公司簡介</a></li>
+          <li><a href="casual.html" id="nav-casual">休閒服飾</a></li>
+          <li><a href="formal.html" class="active" id="nav-formal">正式服飾</a></li>
+          <li><a href="accessories.html" id="nav-accessories">飾品</a></li>
+          <li><a href="gear.html" id="nav-gear">配件</a></li>
+          <li><a href="others.html" id="nav-others">其它類</a></li>
+          <li><a href="contact.html" id="nav-contact">聯絡我們</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="nav-btn" id="search-btn"><i class="fas fa-search"></i></button>
+        <button class="nav-btn" id="theme-toggle"><i class="fas fa-moon"></i></button>
+        <div class="cart-icon-container">
+          <button class="nav-btn" id="cart-btn"><i class="fas fa-shopping-bag"></i></button>
+          <span class="cart-badge" id="cart-badge">0</span>
+        </div>
+        <button class="nav-btn mobile-toggle" id="mobile-toggle"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>正式服飾系列</h1>
+      <p>尊榮、雅致、氣場。精選頂級義大利皮料，手工打磨優雅雕花，成就非同凡響的專業與紳士格調。</p>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="section-padding" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-glass);">
+    <div class="container">
+      <div class="products-grid" id="products-grid">
+        <!-- Rendered by JavaScript dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Drawer -->
+  <div class="cart-drawer glass-panel" id="cart-drawer">
+    <div class="cart-header">
+      <h2>購物清單</h2>
+      <button class="close-cart-btn" id="close-cart"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-items-container" id="cart-items">
+      <!-- Items will be injected by main.js -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-subtotal">
+        <span>小計:</span>
+        <span class="cart-subtotal-price" id="cart-subtotal">0</span>
+      </div>
+      <button class="btn btn-primary checkout-btn" id="checkout-btn">立即結帳</button>
+    </div>
+  </div>
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="search-overlay">
+    <button class="search-close" id="search-close"><i class="fas fa-times"></i></button>
+    <div class="search-container">
+      <input type="text" placeholder="搜尋商品名稱或類別..." class="search-input" id="search-input">
+      <p class="search-hint">按 Enter 開始搜尋</p>
+    </div>
+  </div>
+
+  <!-- Success Notification -->
+  <div class="notification success" id="notification">
+    <i class="fas fa-check-circle"></i>
+    <span class="notif-text">成功加入購物車</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="glass-panel">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <h3>Sole<span>Style</span></h3>
+        <p>為您的雙足，尋找最完美的歸宿。精選全球頂級皮革與機能材料，用極致匠心打磨每一款鞋履與配件。</p>
+        <div class="social-links">
+          <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-line"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>產品類別</h4>
+        <ul>
+          <li><a href="casual.html">休閒服飾</a></li>
+          <li><a href="formal.html">正式服飾</a></li>
+          <li><a href="accessories.html">飾品</a></li>
+          <li><a href="gear.html">配件及保養</a></li>
+          <li><a href="others.html">其它周邊</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>關於品牌</h4>
+        <ul>
+          <li><a href="about.html">公司簡介</a></li>
+          <li><a href="about.html#brand-story">品牌故事</a></li>
+          <li><a href="about.html#store-location">直營門市</a></li>
+          <li><a href="contact.html">聯絡我們</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>客戶服務</h4>
+        <ul>
+          <li><a href="#">常見問題 FAQ</a></li>
+          <li><a href="#">退換貨政策</a></li>
+          <li><a href="#">配送服務資訊</a></li>
+          <li><a href="#">隱私權保護條款</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 SoleStyle. All Rights Reserved. Designed by Antigravity.</p>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('products-grid');
+      // Filter for 'formal'
+      const formalProducts = window.products.filter(p => p.category === 'formal');
+
+      if (grid) {
+        formalProducts.forEach(product => {
+          const card = document.createElement('div');
+          card.className = 'product-card glass-panel';
+          card.innerHTML = `
+            <div class="product-badge">${product.categoryName}</div>
+            <div class="product-img-container" onclick="location.href='product.html?id=${product.id}'" style="cursor: pointer;">
+              <img src="${product.image}" alt="${product.name}" class="product-card-img">
+            </div>
+            <div class="product-info">
+              <span class="product-cat">${product.categoryName}</span>
+              <a href="product.html?id=${product.id}" class="product-title">${product.name}</a>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(${product.reviews})</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">${product.price.toLocaleString()}</div>
+                <button class="add-cart-btn" onclick="addToCart(${product.id}, 1, 9.5)" title="加入購物車">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          `;
+          grid.appendChild(card);
+        });
+      }
+    });
+  </script>
+</body>
+</html>

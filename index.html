@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首頁 | SoleStyle 頂級鞋履美學館</title>
+  <meta name="description" content="SoleStyle 專業銷售休閒鞋、皮鞋、運動鞋及鞋子周邊保養配件與飾品，給您最尊榮的穿著體驗。">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="glass-panel">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="SoleStyle Logo" class="logo-img">
+        <div class="logo-text">Sole<span>Style</span></div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active" id="nav-index">首頁</a></li>
+          <li><a href="about.html" id="nav-about">公司簡介</a></li>
+          <li><a href="casual.html" id="nav-casual">休閒服飾</a></li>
+          <li><a href="formal.html" id="nav-formal">正式服飾</a></li>
+          <li><a href="accessories.html" id="nav-accessories">飾品</a></li>
+          <li><a href="gear.html" id="nav-gear">配件</a></li>
+          <li><a href="others.html" id="nav-others">其它類</a></li>
+          <li><a href="contact.html" id="nav-contact">聯絡我們</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="nav-btn" id="search-btn"><i class="fas fa-search"></i></button>
+        <button class="nav-btn" id="theme-toggle"><i class="fas fa-moon"></i></button>
+        <div class="cart-icon-container">
+          <button class="nav-btn" id="cart-btn"><i class="fas fa-shopping-bag"></i></button>
+          <span class="cart-badge" id="cart-badge">0</span>
+        </div>
+        <button class="nav-btn mobile-toggle" id="mobile-toggle"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h1>為卓越前行<br>踏出<span>奢華質感</span></h1>
+        <p>每一雙鞋都承載著一段故事，每一件配件都彰顯著精緻生活細節。SoleStyle 精選頂級用料，給您的雙足量身打造無懈可擊的優雅。</p>
+        <div class="cta-group">
+          <a href="#featured-products" class="btn btn-primary">立即探索</a>
+          <a href="about.html" class="btn btn-secondary">品牌故事</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <div class="hero-circle-bg"></div>
+        <img src="images/casual_1.png" alt="Featured Sneaker" class="hero-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Category List Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2>精選品類</h2>
+        <p>滿足您從頭到腳的搭配，與專業的保養清潔護理</p>
+      </div>
+      <div class="category-grid">
+        <div class="category-card glass-panel" onclick="location.href='casual.html'">
+          <i class="fas fa-running"></i>
+          <h3>休閒服飾</h3>
+          <p>潮流休閒與機能慢跑鞋履</p>
+        </div>
+        <div class="category-card glass-panel" onclick="location.href='formal.html'">
+          <i class="fas fa-user-tie"></i>
+          <h3>正式服飾</h3>
+          <p>商務皮鞋與仕女優雅高跟鞋</p>
+        </div>
+        <div class="category-card glass-panel" onclick="location.href='accessories.html'">
+          <i class="fas fa-gem"></i>
+          <h3>飾品</h3>
+          <p>鞋帶、鞋扣與抑菌機能襪</p>
+        </div>
+        <div class="category-card glass-panel" onclick="location.href='gear.html'">
+          <i class="fas fa-spray-can"></i>
+          <h3>配件</h3>
+          <p>紅雪松鞋撐與奈米防水防護</p>
+        </div>
+        <div class="category-card glass-panel" onclick="location.href='others.html'">
+          <i class="fas fa-box-open"></i>
+          <h3>其它類</h3>
+          <p>展示鞋盒與深層清潔套組</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products Section -->
+  <section class="section-padding" id="featured-products" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-glass);">
+    <div class="container">
+      <div class="section-header">
+        <h2>熱銷新品推薦</h2>
+        <p>精選明星單品，為您的日常穿搭與護理注入嶄新活力</p>
+      </div>
+      <div class="products-grid" id="featured-grid">
+        <!-- Rendered by JavaScript dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Promise Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2>我們的堅持</h2>
+        <p>三大承諾，只為提供極致的穿著體驗</p>
+      </div>
+      <div class="category-grid">
+        <div class="category-card glass-panel" style="padding: 30px;">
+          <i class="fas fa-shield-alt" style="font-size: 2.5rem;"></i>
+          <h3 style="font-size: 1.15rem; margin-top: 5px;">極致工藝品質</h3>
+          <p style="font-size: 0.85rem;">精選全球優質真皮及奈米面料，歷經數百道工序，手工打造完美線條。</p>
+        </div>
+        <div class="category-card glass-panel" style="padding: 30px;">
+          <i class="fas fa-truck-moving" style="font-size: 2.5rem;"></i>
+          <h3 style="font-size: 1.15rem; margin-top: 5px;">高效尊榮配送</h3>
+          <p style="font-size: 0.85rem;">精裝環保包裝，直營快遞保證48小時內安全送達您手中。</p>
+        </div>
+        <div class="category-card glass-panel" style="padding: 30px;">
+          <i class="fas fa-undo-alt" style="font-size: 2.5rem;"></i>
+          <h3 style="font-size: 1.15rem; margin-top: 5px;">無憂退換承諾</h3>
+          <p style="font-size: 0.85rem;">提供7天免費鑑賞期與原廠完善保固服務，讓您買的放心、穿的安心。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Drawer -->
+  <div class="cart-drawer glass-panel" id="cart-drawer">
+    <div class="cart-header">
+      <h2>購物清單</h2>
+      <button class="close-cart-btn" id="close-cart"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-items-container" id="cart-items">
+      <!-- Items will be injected by main.js -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-subtotal">
+        <span>小計:</span>
+        <span class="cart-subtotal-price" id="cart-subtotal">0</span>
+      </div>
+      <button class="btn btn-primary checkout-btn" id="checkout-btn">立即結帳</button>
+    </div>
+  </div>
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="search-overlay">
+    <button class="search-close" id="search-close"><i class="fas fa-times"></i></button>
+    <div class="search-container">
+      <input type="text" placeholder="搜尋商品名稱或類別..." class="search-input" id="search-input">
+      <p class="search-hint">按 Enter 開始搜尋</p>
+    </div>
+  </div>
+
+  <!-- Success Notification -->
+  <div class="notification success" id="notification">
+    <i class="fas fa-check-circle"></i>
+    <span class="notif-text">成功加入購物車</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="glass-panel">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <h3>Sole<span>Style</span></h3>
+        <p>為您的雙足，尋找最完美的歸宿。精選全球頂級皮革與機能材料，用極致匠心打磨每一款鞋履與配件。</p>
+        <div class="social-links">
+          <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-line"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>產品類別</h4>
+        <ul>
+          <li><a href="casual.html">休閒服飾</a></li>
+          <li><a href="formal.html">正式服飾</a></li>
+          <li><a href="accessories.html">飾品</a></li>
+          <li><a href="gear.html">配件及保養</a></li>
+          <li><a href="others.html">其它周邊</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>關於品牌</h4>
+        <ul>
+          <li><a href="about.html">公司簡介</a></li>
+          <li><a href="about.html#brand-story">品牌故事</a></li>
+          <li><a href="about.html#store-location">直營門市</a></li>
+          <li><a href="contact.html">聯絡我們</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>客戶服務</h4>
+        <ul>
+          <li><a href="#">常見問題 FAQ</a></li>
+          <li><a href="#">退換貨政策</a></li>
+          <li><a href="#">配送服務資訊</a></li>
+          <li><a href="#">隱私權保護條款</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 SoleStyle. All Rights Reserved. Designed by Antigravity.</p>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Get URL search parameters (in case users search from search overlay)
+      const urlParams = new URLSearchParams(window.location.search);
+      const searchQuery = urlParams.get('search');
+      
+      const featuredGrid = document.getElementById('featured-grid');
+      let displayProducts = window.products;
+
+      // If search query exists, modify headers and filter products
+      if (searchQuery) {
+        const query = searchQuery.toLowerCase();
+        displayProducts = window.products.filter(p => 
+          p.name.toLowerCase().includes(query) || 
+          p.categoryName.toLowerCase().includes(query) ||
+          p.description.toLowerCase().includes(query)
+        );
+        
+        // Update section titles to indicate search results
+        const sectionHeader = document.querySelector('#featured-products .section-header');
+        sectionHeader.querySelector('h2').textContent = `「${searchQuery}」的搜尋結果`;
+        sectionHeader.querySelector('p').textContent = `共找到 ${displayProducts.length} 筆符合條件的商品`;
+        
+        // Scroll to featured products
+        setTimeout(() => {
+          document.getElementById('featured-products').scrollIntoView({ behavior: 'smooth' });
+        }, 300);
+      } else {
+        // Otherwise, show selected featured items (e.g. products: 1, 5, 12, 16)
+        const featuredIds = [1, 5, 12, 16];
+        displayProducts = window.products.filter(p => featuredIds.includes(p.id));
+      }
+
+      renderProducts(displayProducts);
+
+      function renderProducts(items) {
+        if (!featuredGrid) return;
+        featuredGrid.innerHTML = '';
+
+        if (items.length === 0) {
+          featuredGrid.innerHTML = `
+            <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-secondary);">
+              <i class="fas fa-search-minus" style="font-size: 3rem; margin-bottom: 15px; color: var(--text-muted);"></i>
+              <p style="font-size: 1.1rem;">很抱歉，找不到符合條件的商品。請嘗試其他關鍵字！</p>
+            </div>
+          `;
+          return;
+        }
+
+        items.forEach(product => {
+          const card = document.createElement('div');
+          card.className = 'product-card glass-panel';
+          card.innerHTML = `
+            <div class="product-badge">${product.categoryName}</div>
+            <div class="product-img-container" onclick="location.href='product.html?id=${product.id}'" style="cursor: pointer;">
+              <img src="${product.image}" alt="${product.name}" class="product-card-img">
+            </div>
+            <div class="product-info">
+              <span class="product-cat">${product.categoryName}</span>
+              <a href="product.html?id=${product.id}" class="product-title">${product.name}</a>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(${product.reviews})</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">${product.price.toLocaleString()}</div>
+                <button class="add-cart-btn" onclick="addToCart(${product.id}, 1, ${product.category === 'casual' || product.category === 'formal' ? 9.5 : null})" title="加入購物車">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          `;
+          featuredGrid.appendChild(card);
+        });
+      }
+    });
+  </script>
+</body>
+</html>

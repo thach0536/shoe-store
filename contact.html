@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>聯絡我們 | SoleStyle 頂級鞋履美學館</title>
+  <meta name="description" content="有任何關於鞋款諮詢、配件保養、或售後服務的問題？歡迎隨時與 SoleStyle 聯絡，我們將竭誠為您服務。">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="glass-panel">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="SoleStyle Logo" class="logo-img">
+        <div class="logo-text">Sole<span>Style</span></div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html" id="nav-index">首頁</a></li>
+          <li><a href="about.html" id="nav-about">公司簡介</a></li>
+          <li><a href="casual.html" id="nav-casual">休閒服飾</a></li>
+          <li><a href="formal.html" id="nav-formal">正式服飾</a></li>
+          <li><a href="accessories.html" id="nav-accessories">飾品</a></li>
+          <li><a href="gear.html" id="nav-gear">配件</a></li>
+          <li><a href="others.html" id="nav-others">其它類</a></li>
+          <li><a href="contact.html" class="active" id="nav-contact">聯絡我們</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="nav-btn" id="search-btn"><i class="fas fa-search"></i></button>
+        <button class="nav-btn" id="theme-toggle"><i class="fas fa-moon"></i></button>
+        <div class="cart-icon-container">
+          <button class="nav-btn" id="cart-btn"><i class="fas fa-shopping-bag"></i></button>
+          <span class="cart-badge" id="cart-badge">0</span>
+        </div>
+        <button class="nav-btn mobile-toggle" id="mobile-toggle"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>聯絡我們</h1>
+      <p>不論您有產品挑選、保養護理疑問、或是售後服務需求，我們的團隊隨時為您提供即時支援。</p>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info Section -->
+  <section class="section-padding" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-glass);">
+    <div class="container">
+      <div class="contact-grid">
+        
+        <!-- Info Column -->
+        <div class="contact-info-panel glass-panel">
+          <div class="info-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <h3>客服專線</h3>
+              <p>0800-000-888</p>
+              <p>週一至週五 09:00 - 18:00</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>電子郵件</h3>
+              <p>support@solestyle.com</p>
+              <p>我們將於24小時內回覆您</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-map-marked-alt"></i>
+            <div>
+              <h3>企業總部</h3>
+              <p>台北市大安區敦化南路一段 100 號 12 樓</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-comments"></i>
+            <div>
+              <h3>線上社群諮詢</h3>
+              <p>Line 官方帳號: @solestyle</p>
+              <p>Facebook / Instagram: solestyle.tw</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="contact-form-panel glass-panel">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="contact-name">姓名 *</label>
+              <input type="text" id="contact-name" class="form-control" placeholder="請輸入您的姓名" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">聯絡信箱 *</label>
+              <input type="email" id="contact-email" class="form-control" placeholder="請輸入您的電子郵件信箱" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-phone">電話號碼</label>
+              <input type="tel" id="contact-phone" class="form-control" placeholder="請輸入您的手機或市話">
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">諮詢類別 *</label>
+              <select id="contact-subject" class="form-control" required style="-webkit-appearance: none; background: url('data:image/svg+xml;utf8,<svg fill=%22%23b8860b%22 height=%2224%22 viewBox=%220 0 24 24%22 width=%2224%22 xmlns=%22http://www.w3.org/2000/svg%22><path d=%22M7 10l5 5 5-5z%22/><path d=%22M0 0h24v24H0z%22 fill=%22none%22/></svg>') no-repeat right 15px center; background-size: 15px;">
+                <option value="" disabled selected>請選擇諮詢項目</option>
+                <option value="product">鞋履選購諮詢</option>
+                <option value="care">鞋子保養與防護問題</option>
+                <option value="order">訂單與配送問題</option>
+                <option value="cooperate">商業合作洽談</option>
+                <option value="other">其他問題意見</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">詳細內容 *</label>
+              <textarea id="contact-message" rows="5" class="form-control" placeholder="請詳細敘述您的需求，我們將會盡快回覆您。" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1rem; border-radius: 10px;">送出留言</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Drawer -->
+  <div class="cart-drawer glass-panel" id="cart-drawer">
+    <div class="cart-header">
+      <h2>購物清單</h2>
+      <button class="close-cart-btn" id="close-cart"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-items-container" id="cart-items">
+      <!-- Items will be injected by main.js -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-subtotal">
+        <span>小計:</span>
+        <span class="cart-subtotal-price" id="cart-subtotal">0</span>
+      </div>
+      <button class="btn btn-primary checkout-btn" id="checkout-btn">立即結帳</button>
+    </div>
+  </div>
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="search-overlay">
+    <button class="search-close" id="search-close"><i class="fas fa-times"></i></button>
+    <div class="search-container">
+      <input type="text" placeholder="搜尋商品名稱或類別..." class="search-input" id="search-input">
+      <p class="search-hint">按 Enter 開始搜尋</p>
+    </div>
+  </div>
+
+  <!-- Success Notification -->
+  <div class="notification success" id="notification">
+    <i class="fas fa-check-circle"></i>
+    <span class="notif-text">成功加入購物車</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="glass-panel">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <h3>Sole<span>Style</span></h3>
+        <p>為您的雙足，尋找最完美的歸宿。精選全球頂級皮革與機能材料，用極致匠心打磨每一款鞋履與配件。</p>
+        <div class="social-links">
+          <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-line"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>產品類別</h4>
+        <ul>
+          <li><a href="casual.html">休閒服飾</a></li>
+          <li><a href="formal.html">正式服飾</a></li>
+          <li><a href="accessories.html">飾品</a></li>
+          <li><a href="gear.html">配件及保養</a></li>
+          <li><a href="others.html">其它周邊</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>關於品牌</h4>
+        <ul>
+          <li><a href="about.html">公司簡介</a></li>
+          <li><a href="about.html#brand-story">品牌故事</a></li>
+          <li><a href="about.html#store-location">直營門市</a></li>
+          <li><a href="contact.html">聯絡我們</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>客戶服務</h4>
+        <ul>
+          <li><a href="#">常見問題 FAQ</a></li>
+          <li><a href="#">退換貨政策</a></li>
+          <li><a href="#">配送服務資訊</a></li>
+          <li><a href="#">隱私權保護條款</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 SoleStyle. All Rights Reserved. Designed by Antigravity.</p>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const contactForm = document.getElementById('contact-form');
+      if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          // Simulate form submission and feedback
+          const name = document.getElementById('contact-name').value;
+          showNotification(`感謝您，${name}！您的留言已送出，客服將儘速回覆。`);
+          contactForm.reset();
+        });
+      }
+    });
+  </script>
+</body>
+</html>
